@@ -5,6 +5,7 @@ from langchain_openai import ChatOpenAI
 from langchain_ollama import ChatOllama
 from langchain_core.prompts import PromptTemplate
 
+# load the environment variables from the .env file
 load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -26,7 +27,7 @@ Musk was the largest donor in the 2024 U.S. presidential election, where he supp
 
 summary_template = f"""
 give the information {information} about a peroson I want you to create:
-1. A short summary5
+1. A short summary
 2. two interesting facts about them
 """
 
